@@ -1,6 +1,8 @@
 name: "Next.js Bundle Analysis Annotation"
 
 on:
+  push:
+    branches: [main]
   workflow_call:
   workflow_dispatch:
 
