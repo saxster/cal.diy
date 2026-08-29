@@ -1,6 +1,8 @@
 name: E2E Atoms
 
 on:
+  push:
+    branches: [main]
   workflow_call:
 permissions:
   actions: write
