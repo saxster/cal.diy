@@ -1,5 +1,7 @@
 name: E2E Embed React tests and booking flow (for non-embed as well)
 on:
+  push:
+    branches: [main]
   workflow_call:
 permissions:
   actions: write
