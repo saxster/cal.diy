@@ -1,5 +1,7 @@
 name: Security Audit
 on:
+  push:
+    branches: [main]
   workflow_call:
 permissions:
   actions: write
