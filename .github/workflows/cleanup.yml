@@ -1,6 +1,8 @@
 name: Delete
 
 on:
+  push:
+    branches: [main]
   delete:
     branches-ignore: [main, gh-pages]
 
