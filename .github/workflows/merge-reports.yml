@@ -1,5 +1,7 @@
 # https://playwright.dev/docs/test-sharding#merging-reports-from-multiple-shards
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       source_run_id:
