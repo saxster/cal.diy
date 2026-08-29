@@ -1,9 +1,7 @@
 name: cleanup caches by a branch
 on:
-  pull_request:
-    types:
-      - closed
-
+  push:
+    branches: [main]
 jobs:
   cleanup:
     runs-on: ubuntu-latest
