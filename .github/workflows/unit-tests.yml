@@ -1,5 +1,7 @@
 name: Unit
 on:
+  push:
+    branches: [main]
   workflow_call:
 env:
   LINGO_DOT_DEV_API_KEY: ${{ secrets.CI_LINGO_DOT_DEV_API_KEY }}
