@@ -1,6 +1,8 @@
 name: All checks
 
 on:
+  push:
+    branches: [main]
   merge_group:
   workflow_dispatch:
 
