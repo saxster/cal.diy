@@ -1,13 +1,8 @@
 name: "Validate PRs"
 
 on:
-  pull_request_target:
-    types:
-      - opened
-      - reopened
-      - edited
-      - synchronize
-
+  push:
+    branches: [main]
 permissions:
   pull-requests: write
 
