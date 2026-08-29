@@ -2,6 +2,8 @@ name: Draft release
 run-name: Draft release ${{ inputs.next_version }}
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       next_version:
