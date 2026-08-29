@@ -1,5 +1,7 @@
 name: Check breaking changes and run E2E
 on:
+  push:
+    branches: [main]
   workflow_call:
 env:
   ALLOWED_HOSTNAMES: ${{ vars.CI_ALLOWED_HOSTNAMES }}
