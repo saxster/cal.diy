@@ -1,11 +1,8 @@
 name: Cron - monthlyDigestEmail
 
 on:
-  # "Scheduled workflows run on the latest commit on the default or base branch."
-  # — https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
-  schedule:
-    # Runs on the 28th, 29th, 30th and 31st of every month (see https://crontab.guru)
-    - cron: "59 23 28-31 * *"
+  push:
+    branches: [main]
 jobs:
   cron-monthlyDigestEmail:
     env:
